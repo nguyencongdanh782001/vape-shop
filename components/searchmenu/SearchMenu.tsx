@@ -15,7 +15,7 @@ const SearchMenu = () => {
     { id: 2, size: "120ml" },
   ];
   return (
-    <ul className="flex justify-start items-center gap-x-5 mx-[49px] pl-3 mb-4 bg-white rounded">
+    <ul className="flex justify-start items-center gap-x-5 lg:mx-[49px] pl-3 mb-4 bg-white rounded">
       <li className="font-medium text-base text-red-500 py-2 tracking-wide">
         Tìm kiếm:
       </li>
@@ -26,7 +26,7 @@ const SearchMenu = () => {
             <MdKeyboardArrowDown />
           </i>
         </div>
-        <ul className="absolute z-10 overflow-hidden bg-white top-8 left-0 w-44 rounded border border-gray-400 scale-y-0 group-hover:scale-y-100 transition-transform duration-[250ms] origin-top">
+        <ul className="absolute z-10 overflow-hidden bg-white top-10 left-0 w-44 rounded border border-gray-400 scale-y-0 group-hover:scale-y-100 transition-transform duration-[250ms] origin-top">
           {price.map((item, index) => (
             <li
               key={index}
@@ -48,7 +48,7 @@ const SearchMenu = () => {
             <MdKeyboardArrowDown />
           </i>
         </div>
-        <ul className="absolute z-10 overflow-hidden bg-white top-8 left-0 w-44 rounded border border-gray-400 scale-y-0 group-hover:scale-y-100 transition-transform duration-[250ms] origin-top">
+        <ul className="absolute z-10 overflow-hidden bg-white top-10 left-0 w-44 rounded border border-gray-400 scale-y-0 group-hover:scale-y-100 transition-transform duration-[250ms] origin-top">
           {price.map((item, index) => (
             <li
               key={index}
@@ -63,14 +63,14 @@ const SearchMenu = () => {
           ))}
         </ul>
       </li>
-      <li className="flex flex-col cursor-pointer relative group py-2">
+      <li className="flex flex-col cursor-pointer relative group py-2 ">
         <div className="font-medium text-base tracking-wide flex items-center justify-between gap-x-2">
           <p>Thương hiệu</p>
           <i>
             <MdKeyboardArrowDown />
           </i>
         </div>
-        <ul className="absolute z-10 overflow-hidden bg-white top-8 left-0 w-44 rounded border border-gray-400 scale-y-0 group-hover:scale-y-100 transition-transform duration-[250ms] origin-top">
+        <ul className=" absolute z-10 overflow-hidden bg-white top-10 left-0 w-44 rounded border border-gray-400 scale-y-0 group-hover:scale-y-100 group-focus:scale-y-100 transition-transform duration-[250ms] origin-top">
           {price.map((item, index) => (
             <li
               key={index}
@@ -92,7 +92,7 @@ const SearchMenu = () => {
             <MdKeyboardArrowDown />
           </i>
         </div>
-        <ul className="absolute z-10 overflow-hidden bg-white top-8 left-0 w-24 rounded border border-gray-400 scale-y-0 group-hover:scale-y-100 transition-transform duration-[250ms] origin-top">
+        <ul className="absolute z-10 overflow-hidden bg-white top-10 left-0 w-24 rounded border border-gray-400 scale-y-0 group-hover:scale-y-100 transition-transform duration-[250ms] origin-top">
           {sizes.map((item, index) => (
             <li
               key={index}
